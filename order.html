@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>PrintEase — New Order</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-mark"></span>
+      PrintEase<span style="color: var(--accent);">.</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="order.html" class="active">New Order</a></li>
+      <li><a href="index.html#pricing">Pricing</a></li>
+      <li>Staff</li>
+    </ul>
+    <a href="index.html" class="nav-cta">Save &amp; exit ↩</a>
+  </div>
+</nav>
+
+<main>
+
+  <div class="order-layout">
+
+    <div class="order-main">
+
+      <div class="page-eyebrow">§ New order · Step 02 of 04</div>
+      <h1 class="page-title">Configure your print job.</h1>
+
+      <div class="progress">
+        <div class="progress-step done"><span class="ring">✓</span> Files</div>
+        <hr>
+        <div class="progress-step current"><span class="ring">2</span> Options</div>
+        <hr>
+        <div class="progress-step"><span class="ring">3</span> Details</div>
+        <hr>
+        <div class="progress-step"><span class="ring">4</span> Payment</div>
+      </div>
+
+      <div class="upload-zone">
+        <div class="upload-icon">↑</div>
+        <h3>Drop files here</h3>
+        <p>or <u>browse from your computer</u></p>
+        <div class="upload-formats">PDF · DOCX · PNG · JPG · JPEG &nbsp;·&nbsp; max 50 MB per file</div>
+      </div>
+
+      <div class="file-list">
+        <div class="file-list-head">
+          <h4>Your files</h4>
+          <span>3 documents · 47 pages total</span>
+        </div>
+
+        <div class="file-card">
+          <div class="file-thumb pdf">PDF</div>
+          <div class="file-meta">
+            <h5>Final_Thesis_Draft_v4.pdf</h5>
+            <div class="details">
+              <span>32 pages</span><span>2.4 MB</span><span>Colour · Duplex · A4</span>
+            </div>
+          </div>
+          <div class="file-actions">
+            <button class="icon-btn" title="Configure">⚙</button>
+            <button class="icon-btn" title="Preview">⊙</button>
+            <button class="icon-btn danger" title="Remove">×</button>
+          </div>
+        </div>
+
+        <div class="file-card">
+          <div class="file-thumb docx">DOCX</div>
+          <div class="file-meta">
+            <h5>Bibliography_appendix.docx</h5>
+            <div class="details">
+              <span>12 pages</span><span>180 KB</span><span>B&amp;W · Single-side · A4</span>
+            </div>
+          </div>
+          <div class="file-actions">
+            <button class="icon-btn" title="Configure">⚙</button>
+            <button class="icon-btn" title="Preview">⊙</button>
+            <button class="icon-btn danger" title="Remove">×</button>
+          </div>
+        </div>
+
+        <div class="file-card">
+          <div class="file-thumb img">JPG</div>
+          <div class="file-meta">
+            <h5>Cover_image_v2.jpg</h5>
+            <div class="details">
+              <span>1 page</span><span>3.8 MB</span><span>Colour · A3 · 200g matte</span>
+            </div>
+          </div>
+          <div class="file-actions">
+            <button class="icon-btn" title="Configure">⚙</button>
+            <button class="icon-btn" title="Preview">⊙</button>
+            <button class="icon-btn danger" title="Remove">×</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="options-block">
+        <h4>General settings</h4>
+
+        <div class="opt-grid">
+          <div class="opt-field">
+            <label>Paper size</label>
+            <select>
+              <option>A4 (210 × 297 mm)</option>
+              <option>A5 (148 × 210 mm)</option>
+              <option>A3 (297 × 420 mm)</option>
+              <option>A2 (420 × 594 mm)</option>
+              <option>Letter (216 × 279 mm)</option>
+            </select>
+          </div>
+
+          <div class="opt-field">
+            <label>Paper weight</label>
+            <select>
+              <option>80 g/m² — standard</option>
+              <option>100 g/m²</option>
+              <option>120 g/m²</option>
+              <option>160 g/m²</option>
+              <option>200 g/m² — poster</option>
+              <option>250 g/m² — card</option>
+            </select>
+          </div>
+
+          <div class="opt-field">
+            <label>Colour mode</label>
+            <div class="chips">
+              <div class="chip active">Full colour</div>
+              <div class="chip">Greyscale</div>
+              <div class="chip">B &amp; W only</div>
+            </div>
+          </div>
+
+          <div class="opt-field">
+            <label>Sided</label>
+            <div class="chips">
+              <div class="chip">Single-sided</div>
+              <div class="chip active">Duplex (both)</div>
+            </div>
+          </div>
+
+          <div class="opt-field">
+            <label>Orientation</label>
+            <div class="chips">
+              <div class="chip active">Portrait</div>
+              <div class="chip">Landscape</div>
+              <div class="chip">Auto</div>
+            </div>
+          </div>
+
+          <div class="opt-field">
+            <label>Finishing</label>
+            <div class="chips">
+              <div class="chip">None</div>
+              <div class="chip active">Staple</div>
+              <div class="chip">Spiral bind</div>
+              <div class="chip">Thermal bind</div>
+              <div class="chip">Laminate</div>
+            </div>
+          </div>
+
+          <div class="opt-field">
+            <label>Copies per document</label>
+            <input type="number" value="1" min="1" max="500" />
+          </div>
+
+          <div class="opt-field">
+            <label>Pickup turnaround</label>
+            <select>
+              <option>Standard — within 24 hours</option>
+              <option>Same day — by close</option>
+              <option>Express — within 2 hours (+€3.00)</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div style="display: flex; justify-content: space-between; margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--rule);">
+        <a href="index.html" class="btn btn-secondary">← Back</a>
+        <a href="#" class="btn btn-primary">Continue to details →</a>
+      </div>
+
+    </div>
+
+    <aside class="summary">
+      <div class="summary-head">
+        <h4>Order summary</h4>
+        <span class="code">№ DRAFT-4471</span>
+      </div>
+
+      <div class="summary-body">
+        <div class="summary-row">
+          <span class="label">Thesis_Draft_v4 · 32pp</span>
+          <span class="val">€6.40</span>
+        </div>
+        <div class="summary-row">
+          <span class="label">Bibliography · 12pp</span>
+          <span class="val">€0.72</span>
+        </div>
+        <div class="summary-row">
+          <span class="label">Cover_image · A3</span>
+          <span class="val">€2.80</span>
+        </div>
+        <div class="summary-row">
+          <span class="label">Staple binding × 1</span>
+          <span class="val">€0.50</span>
+        </div>
+        <div class="summary-row">
+          <span class="label">Colour upgrade</span>
+          <span class="val">€1.20</span>
+        </div>
+        <div class="summary-row" style="margin-top: 0.6rem; padding-top: 0.8rem; border-top: 1px solid var(--rule);">
+          <span class="label">Subtotal</span>
+          <span class="val">€11.62</span>
+        </div>
+        <div class="summary-row">
+          <span class="label">VAT (19%)</span>
+          <span class="val">€2.21</span>
+        </div>
+      </div>
+
+      <div class="summary-total">
+        <span class="lbl">Total</span>
+        <span class="amt">€13.83</span>
+      </div>
+
+      <div class="summary-cta">
+        <button class="btn btn-accent">Proceed to payment →</button>
+      </div>
+
+      <div class="summary-note">
+        ↳ Files are encrypted in transit and at rest, then deleted automatically 14 days after pickup confirmation. Payment processed via secure third-party gateway. PrintEase does not store card data.
+      </div>
+    </aside>
+
+  </div>
+
+</main>
+
+<footer style="margin-top: 2rem;">
+  <div class="footer-inner">
+    <div class="footer-bottom" style="padding-top: 0; border: none;">
+      <span>© 2026 PrintEase · COMP401 Prototype</span>
+      <span>Secure connection · HTTPS</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
