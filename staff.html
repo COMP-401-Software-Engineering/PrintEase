@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>PrintEase — Staff Dashboard</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-mark"></span>
+      PrintEase<span style="color: var(--accent);">.</span>
+      <span style="font-family: var(--mono); font-size: 10px; letter-spacing: 0.2em; color: var(--ink-muted); margin-left: 0.8rem; text-transform: uppercase;">/ Staff</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="staff.html" class="active">Orders</a></li>
+      <li><a href="#">Customers</a></li>
+      <li><a href="#">Inventory</a></li>
+      <li><a href="#">Reports</a></li>
+    </ul>
+    <a href="#" class="nav-cta">A. Mustafa · Sign out</a>
+  </div>
+</nav>
+
+<main>
+
+  <div class="dash-header">
+    <div>
+      <div class="page-eyebrow">Print queue · Live</div>
+      <h1>Good afternoon, Abdihakim.</h1>
+    </div>
+    <div class="meta">
+      Thursday, 14 May 2026<br>
+      <strong>14:32</strong>
+    </div>
+  </div>
+
+  <div class="dash-stats">
+    <div class="stat">
+      <div class="stat-label">New orders</div>
+      <div class="stat-value">12</div>
+      <div class="stat-delta">+3 in last hour</div>
+    </div>
+    <div class="stat">
+      <div class="stat-label">In progress</div>
+      <div class="stat-value">07</div>
+      <div class="stat-delta">2 due within 2h</div>
+    </div>
+    <div class="stat">
+      <div class="stat-label">On hold</div>
+      <div class="stat-value">03</div>
+      <div class="stat-delta down">file review needed</div>
+    </div>
+    <div class="stat">
+      <div class="stat-label">Today's revenue</div>
+      <div class="stat-value">€284</div>
+      <div class="stat-delta">+18% vs avg</div>
+    </div>
+  </div>
+
+  <div class="dash-tabs">
+    <div class="dash-tab active">All <span class="count">22</span></div>
+    <div class="dash-tab">New <span class="count">12</span></div>
+    <div class="dash-tab">In progress <span class="count">7</span></div>
+    <div class="dash-tab">On hold <span class="count">3</span></div>
+    <div class="dash-tab">Completed today <span class="count">19</span></div>
+    <div class="dash-tab">Rejected <span class="count">1</span></div>
+  </div>
+
+  <table class="orders-table">
+    <thead>
+      <tr>
+        <th>Order</th>
+        <th>Customer</th>
+        <th>Files</th>
+        <th>Specs</th>
+        <th>Payment</th>
+        <th>Status</th>
+        <th>Total</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+
+      <tr>
+        <td>
+          <div class="order-id">№ 4471</div>
+          <div style="font-family: var(--mono); font-size: 10px; color: var(--ink-muted); margin-top: 4px;">14:28 · today</div>
+        </td>
+        <td>
+          <div class="customer-name">Nikita Petrov</div>
+          <div class="customer-email">n.petrov@ucy.ac.cy · +357 99 …</div>
+        </td>
+        <td><div class="order-files"><strong>3</strong> · 47pp</div></td>
+        <td><div class="order-files">A4 · Colour · Duplex · Staple</div></td>
+        <td><span class="badge paid">Paid</span></td>
+        <td><span class="badge new">New</span></td>
+        <td><div class="order-price">€13.83</div></td>
+        <td>
+          <div class="row-actions">
+            <button class="icon-btn" title="Accept">✓</button>
+            <button class="icon-btn" title="Hold">⏸</button>
+            <button class="icon-btn danger" title="Reject">×</button>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <div class="order-id">№ 4470</div>
+          <div style="font-family: var(--mono); font-size: 10px; color: var(--ink-muted); margin-top: 4px;">14:11 · today</div>
+        </td>
+        <td>
+          <div class="customer-name">Maria Constantinou</div>
+          <div class="customer-email">maria.c@gmail.com</div>
+        </td>
+        <td><div class="order-files"><strong>1</strong> · 86pp</div></td>
+        <td><div class="order-files">A4 · B&amp;W · Duplex · Spiral bind</div></td>
+        <td><span class="badge paid">Paid</span></td>
+        <td><span class="badge progress">In progress</span></td>
+        <td><div class="order-price">€7.20</div></td>
+        <td>
+          <div class="row-actions">
+            <button class="icon-btn" title="Mark done">✓</button>
+            <button class="icon-btn" title="Hold">⏸</button>
+            <button class="icon-btn" title="Open">↗</button>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <div class="order-id">№ 4469</div>
+          <div style="font-family: var(--mono); font-size: 10px; color: var(--ink-muted); margin-top: 4px;">13:54 · today</div>
+        </td>
+        <td>
+          <div class="customer-name">Andreas Georgiou</div>
+          <div class="customer-email">andreas.g@cyta.com.cy</div>
+        </td>
+        <td><div class="order-files"><strong>2</strong> · 14pp</div></td>
+        <td><div class="order-files">A3 · Colour · Single · Laminate</div></td>
+        <td><span class="badge paid">Paid</span></td>
+        <td><span class="badge new">New</span></td>
+        <td><div class="order-price">€18.90</div></td>
+        <td>
+          <div class="row-actions">
+            <button class="icon-btn" title="Accept">✓</button>
+            <button class="icon-btn" title="Hold">⏸</button>
+            <button class="icon-btn danger" title="Reject">×</button>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <div class="order-id">№ 4468</div>
+          <div style="font-family: var(--mono); font-size: 10px; color: var(--ink-muted); margin-top: 4px;">13:40 · today</div>
+        </td>
+        <td>
+          <div class="customer-name">Elena Charalambous</div>
+          <div class="customer-email">elena.c@ouc.ac.cy</div>
+        </td>
+        <td><div class="order-files"><strong>1</strong> · 320pp</div></td>
+        <td><div class="order-files">A4 · B&amp;W · Duplex · Thermal bind</div></td>
+        <td><span class="badge paid">Paid</span></td>
+        <td><span class="badge hold">On hold</span></td>
+        <td><div class="order-price">€42.50</div></td>
+        <td>
+          <div class="row-actions">
+            <button class="icon-btn" title="Resume">▶</button>
+            <button class="icon-btn" title="Contact">✉</button>
+            <button class="icon-btn" title="Open">↗</button>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <div class="order-id">№ 4467</div>
+          <div style="font-family: var(--mono); font-size: 10px; color: var(--ink-muted); margin-top: 4px;">13:22 · today</div>
+        </td>
+        <td>
+          <div class="customer-name">Christos Demetriou</div>
+          <div class="customer-email">cdemetri@deloitte.com.cy</div>
+        </td>
+        <td><div class="order-files"><strong>5</strong> · 28pp</div></td>
+        <td><div class="order-files">A4 · Colour · Single · None</div></td>
+        <td><span class="badge paid">Paid</span></td>
+        <td><span class="badge progress">In progress</span></td>
+        <td><div class="order-price">€5.60</div></td>
+        <td>
+          <div class="row-actions">
+            <button class="icon-btn" title="Mark done">✓</button>
+            <button class="icon-btn" title="Hold">⏸</button>
+            <button class="icon-btn" title="Open">↗</button>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <div class="order-id">№ 4466</div>
+          <div style="font-family: var(--mono); font-size: 10px; color: var(--ink-muted); margin-top: 4px;">12:58 · today</div>
+        </td>
+        <td>
+          <div class="customer-name">Yiannis Loizou</div>
+          <div class="customer-email">yiannis.l@hotmail.com</div>
+        </td>
+        <td><div class="order-files"><strong>1</strong> · 1pp</div></td>
+        <td><div class="order-files">A0 · Colour · Single · Laminate · 200g</div></td>
+        <td><span class="badge paid">Paid</span></td>
+        <td><span class="badge complete">Complete</span></td>
+        <td><div class="order-price">€24.00</div></td>
+        <td>
+          <div class="row-actions">
+            <button class="icon-btn" title="Print receipt">⎙</button>
+            <button class="icon-btn" title="Archive">📦</button>
+            <button class="icon-btn" title="Open">↗</button>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <div class="order-id">№ 4465</div>
+          <div style="font-family: var(--mono); font-size: 10px; color: var(--ink-muted); margin-top: 4px;">12:35 · today</div>
+        </td>
+        <td>
+          <div class="customer-name">Sofia Papadopoulou</div>
+          <div class="customer-email">sofia.papa@protonmail.com</div>
+        </td>
+        <td><div class="order-files"><strong>4</strong> · 62pp</div></td>
+        <td><div class="order-files">A4 · Mixed · Duplex · Staple</div></td>
+        <td><span class="badge paid">Paid</span></td>
+        <td><span class="badge complete">Complete</span></td>
+        <td><div class="order-price">€11.40</div></td>
+        <td>
+          <div class="row-actions">
+            <button class="icon-btn" title="Print receipt">⎙</button>
+            <button class="icon-btn" title="Archive">📦</button>
+            <button class="icon-btn" title="Open">↗</button>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <div class="order-id">№ 4464</div>
+          <div style="font-family: var(--mono); font-size: 10px; color: var(--ink-muted); margin-top: 4px;">12:18 · today</div>
+        </td>
+        <td>
+          <div class="customer-name">Anonymous user</div>
+          <div class="customer-email">guest_4464 · no email on file</div>
+        </td>
+        <td><div class="order-files"><strong>1</strong> · ?pp</div></td>
+        <td><div class="order-files">Corrupted file, cannot read</div></td>
+        <td><span class="badge unpaid">Unpaid</span></td>
+        <td><span class="badge hold">On hold</span></td>
+        <td><div class="order-price">—</div></td>
+        <td>
+          <div class="row-actions">
+            <button class="icon-btn" title="Contact">✉</button>
+            <button class="icon-btn danger" title="Reject">×</button>
+            <button class="icon-btn" title="Open">↗</button>
+          </div>
+        </td>
+      </tr>
+
+    </tbody>
+  </table>
+
+  <div style="display: flex; justify-content: space-between; align-items: center; margin: 2rem 0 5rem; padding-top: 1.5rem; border-top: 1px solid var(--rule);">
+    <span style="font-family: var(--mono); font-size: 11px; letter-spacing: 0.1em; color: var(--ink-muted);">Showing 8 of 22 orders</span>
+    <div style="display: flex; gap: 0.5rem;">
+      <button class="icon-btn">←</button>
+      <button class="icon-btn" style="background: var(--ink); color: var(--paper);">1</button>
+      <button class="icon-btn">2</button>
+      <button class="icon-btn">3</button>
+      <button class="icon-btn">→</button>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-bottom" style="padding-top: 0; border: none;">
+      <span>© 2026 PrintEase · Staff portal · COMP401 Prototype</span>
+      <span>Session expires in 47 min</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
